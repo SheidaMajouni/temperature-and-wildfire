@@ -12,8 +12,7 @@ import dash_bootstrap_components as dbc
 from dash.dependencies import Input, Output
 import plotly.express as px
 
-# df_w = pd.read_excel("E:\\D\\PHD\\term1\\visual analystic\\prj\\visual data\\temp.xlsx")
-df_w = pd.read_excel("data\\temp.xlsx")
+df_w = pd.read_excel("temp.xlsx")
 
 df_w['datetime'] = pd.to_datetime(df_w['datetime'], unit='ms')
 df_w = df_w.melt(id_vars='datetime')
